@@ -1,0 +1,231 @@
+:root {
+    --background-dark-color: #0F0F0F;
+    --font-light-color: #FFEDD9;
+    --dark-box: linear-gradient(108deg, #202020 0%, #121212 100%);
+    --Photo-gradient: linear-gradient(135deg, #F74C06 0.09%, #F9BC2C 99.96%);
+}
+
+body {
+    font-family: 'Questrial';
+    background-color: var(--background-dark-color);
+    color: var(--font-light-color);
+}
+
+#CajaPadre {
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    max-width: calc(260px * 4 + 3rem * 2 + 3rem *2);
+    /* Ajusta el ancho máximo para 4 columnas */
+    margin: auto;
+    padding: 3rem;
+}
+
+/*TODO Caja con foto */
+
+#CajaFoto {
+    grid-column: span 2;
+    min-height: 325px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 2rem;
+}
+
+#myPhoto {
+    width: 100%;
+    position: absolute;
+    top: 18px;
+}
+
+#FondoFoto {
+    width: 220px;
+    height: 220px;
+    border-radius: 22px;
+    background: var(--Photo-gradient);
+
+    position: relative;
+}
+
+#txtFoto {
+    width: 220px;
+    height: 220px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#txtFoto h1 {
+    font-size: 40px;
+}
+
+#txtFoto p {
+    font-size: 20px;
+}
+
+/*TODO Caja titulo projecto */
+
+#CajaTituloProjecto {
+    height: 50px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#CajaTituloProjecto h2 {
+    font-size: 15px;
+    margin-left: 2rem;
+}
+
+/*TODO Caja projecto */
+
+#CajaProjecto {
+    grid-column: span 2;
+}
+
+#CajaProjecto img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 220px;
+}
+
+#CajaProjectoGaleria {
+    padding: 2rem;
+    min-height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*TODO Caja Contacto */
+#CajaContacto {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#CajaContacto h2 {
+    font-size: 2.2rem;
+}
+
+#CajaContacto span {
+    color: #F9BC2C;
+}
+
+/*TODO Caja especializacion */
+
+#CajaEspecializacion {
+    min-height: 260px;
+    padding: 2rem;
+    grid-column: span 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#IconosEspecializacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#IconosEspecializacion i {
+    padding: 1rem;
+}
+
+/*TODO Caja redes */
+
+#CajaRedes {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#IconosRedes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+#IconosRedes i {
+    transition: 0.3s ease-in-out;
+}
+
+#IconosRedes i:hover {
+    color: #F9BC2C;
+}
+
+/*TODO Cambios generales */
+article {
+    border-radius: 30px;
+    background: var(--dark-box);
+    border: 2px solid var(--dark-box);
+
+    position: relative;
+}
+
+
+
+article:hover .active {
+    color: #F9BC2C;
+}
+
+h3 {
+    font-size: 14px;
+    color: #707070;
+
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+i {
+    font-size: 3rem;
+}
+
+.active {
+    color: #3A3A3A;
+    position: absolute;
+
+    bottom: 1rem;
+    right: 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.active:hover {
+    color: #F9BC2C;
+}
+
+img {
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #CajaPadre {
+        padding: 1rem;
+    }
+
+    #txtFoto {
+        width: auto;
+        margin-top: 2rem;
+    }
+}

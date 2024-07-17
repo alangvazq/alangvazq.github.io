@@ -1,0 +1,122 @@
+:root {
+    --background-dark-color: #0F0F0F;
+    --font-light-color: #FFEDD9;
+    --dark-box: linear-gradient(108deg, #202020 0%, #121212 100%);
+    --Photo-gradient: linear-gradient(135deg, #F74C06 0.09%, #F9BC2C 99.96%);
+}
+
+body {
+    font-family: 'Questrial';
+    background-color: var(--background-dark-color);
+    color: var(--font-light-color);
+    
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+h1 {
+    font-size: 4rem;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+/* Card datos */
+
+#CardDatos{
+    background: var(--dark-box);
+    border-radius: 30px;
+    border: 1px solid var(--dark-box);
+    background: var(--dark-box);
+
+    width: 372px;
+    height: 652px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 2rem;
+}
+
+#IconosRedes{
+    padding-bottom: 2rem;
+}
+
+#CardFoto{
+    background: var(--Photo-gradient);
+    border-radius: 30px;
+    border: 1px solid var(--Photo-gradient);
+    background: var(--Photo-gradient);
+
+    width: 324px;
+    height: 326px;
+
+    position: relative;
+}
+
+#miFoto{
+    width: 100%;
+    position: absolute;
+    top: 28px;
+
+
+
+}
+
+/* Aside */
+
+aside{
+    width: 700px;
+}
+
+/* Generales */
+
+aside{
+    padding: 2rem;
+}
+
+.ContenedorDatos{
+    padding-bottom: 5rem;
+}
+
+h2{
+    font-size: 24px;
+    padding-bottom: 40px;
+}
+
+h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+h4{
+    font-size: 20px;
+    color: #F9BC2C;
+    padding-bottom: 10px;
+}
+
+h5{
+    font-size: 16px;
+    color: #707070;
+    padding-bottom: 5px;
+}
+
+i{
+    font-size: 3rem;
+    padding: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+i:hover{
+    color: #F9BC2C;
+}
+
+td{
+    padding: 1rem;
+}

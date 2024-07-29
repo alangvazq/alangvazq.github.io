@@ -8,6 +8,7 @@
 body {
     font-family: 'Questrial';
     background-color: var(--background-dark-color);
+    background-color: #0F0F0F;
     color: var(--font-light-color);
 
 }
@@ -42,15 +43,14 @@ main {
 
 .CajaTitulo {
     width: 100%;
-
-
+    
     margin: 1rem;
 
     border-radius: 30px;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: start;
 
     background: var(--dark-box);
 
@@ -88,15 +88,14 @@ img {
 }
 
 /* Estilizar input para que se vea igual en todos los navegadores */
-input[type="text"], input[type="email"], textarea {
-    width: 100%;
+input[type="text"], input[type="email"], .msg {
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    
+}
+
+
+.form-input{
+    margin-bottom: 1rem;
 }
 
 #boton {
@@ -106,6 +105,13 @@ input[type="text"], input[type="email"], textarea {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: Questrial;
+    transition: 0.3s all ease-in-out;
+}
+
+#boton:hover {
+    background-color: #F74C06;
+    color: white;
 }
 
 h2 {
